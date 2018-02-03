@@ -16,6 +16,10 @@ to run the server locally: 'python manage.py runserver' or:
 
 to get all (i.e -r) project files, used 'scp -r root@138.68.185.197:/home/django/django_project .' copies django-project to current directory (i.e. .)
 
+to deploy / copy all files to remote machine run:
+
+`make deploy`
+
 
 
 
