@@ -2,11 +2,11 @@
 
 run 'source setup.sh' to set up python venv and install dependencies from requirements.txt
 
-to setup with Makefile:
+to setup with Makefile (If this fails use command above):
 
 `make setup`
 
-to connect to box using ecure shell command 'ssh root@138.68.185.197'
+to connect to box using secure shell command 'ssh root@138.68.185.197':
 
 `make ssh`
 
