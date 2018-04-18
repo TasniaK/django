@@ -1,6 +1,11 @@
 {#wrapping python around html code#}
 {#allows python to generate html code so less html code needs to be written, also prevents repeating code unneccesarily#}
 
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+</head>
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -10,3 +15,4 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+

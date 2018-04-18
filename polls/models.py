@@ -4,7 +4,8 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils import timezone
 
-# Create your models here.
+# making a class "Question" which inherits from Model class in models module (python file with stuff in it)
+# python package is a python folder with stuff in it
 @python_2_unicode_compatible
 class Question(models.Model):
 	question_text = models.CharField(max_length = 200)
