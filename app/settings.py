@@ -99,6 +99,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+import os
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -106,7 +107,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
 
-import os
 import netifaces
 
 # Find out what the IP addresses are at run time

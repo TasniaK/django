@@ -8,9 +8,9 @@ from django.utils import timezone
 
 from .models import Choice, Question
 
-#generic views ListView and DetailView used here
-#template_name specified to prevent Django using a default template
-#
+# generic views ListView and DetailView used here
+# template_name specified to prevent Django using a default template
+
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
